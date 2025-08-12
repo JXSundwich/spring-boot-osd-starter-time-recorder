@@ -1,10 +1,10 @@
-package com.chehejia.timerecorder.aspect;
+package com.sundwich.timerecorder.aspect;
 
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
-import com.chehejia.timerecorder.annotation.TimeRecord;
-import com.chehejia.timerecorder.properties.TimeRecorderProperties;
+import com.sundwich.timerecorder.annotation.TimeRecord;
+import com.sundwich.timerecorder.properties.TimeRecorderProperties;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

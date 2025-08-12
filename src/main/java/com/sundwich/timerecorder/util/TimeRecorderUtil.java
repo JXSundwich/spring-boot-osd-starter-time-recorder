@@ -1,6 +1,6 @@
-package com.chehejia.timerecorder.util;
+package com.sundwich.timerecorder.util;
 
-import com.chehejia.timerecorder.aspect.TimeRecorderAspect;
+import com.sundwich.timerecorder.aspect.TimeRecorderAspect;
 
 /**
  * @author sundwich

@@ -1,7 +1,7 @@
-package com.chehejia.timerecorder.config;
+package com.sundwich.timerecorder.config;
 
-import com.chehejia.timerecorder.aspect.TimeRecorderAspect;
-import com.chehejia.timerecorder.properties.TimeRecorderProperties;
+import com.sundwich.timerecorder.aspect.TimeRecorderAspect;
+import com.sundwich.timerecorder.properties.TimeRecorderProperties;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;

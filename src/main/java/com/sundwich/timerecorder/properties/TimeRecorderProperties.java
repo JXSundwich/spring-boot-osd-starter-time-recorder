@@ -1,4 +1,4 @@
-package com.chehejia.timerecorder.properties;
+package com.sundwich.timerecorder.properties;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
