@@ -1,14 +1,13 @@
 package com.sundwich.timerecorder.aspect;
 
+import com.sundwich.timerecorder.annotation.TimeRecord;
+import com.sundwich.timerecorder.properties.TimeRecorderProperties;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
-import com.sundwich.timerecorder.annotation.TimeRecord;
-import com.sundwich.timerecorder.properties.TimeRecorderProperties;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.util.StopWatch;
 
 import java.util.Stack;
