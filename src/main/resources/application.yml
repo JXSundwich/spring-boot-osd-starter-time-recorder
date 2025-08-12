@@ -1,0 +1,18 @@
+# 定时打点工具配置
+time-recorder:
+  # 是否启用时间记录器
+  enabled: true
+  # 分段计时功能默认状态
+  enable-phase-default: true
+  # 是否输出详细分段日志
+  show-details: true
+  # 超时警告阈值（毫秒），超过此值显示警告
+  warn-threshold: 1000
+
+# 日志配置
+logging:
+  level:
+    com.sundwich.timerecorder: INFO
+    com.sundwich: DEBUG
+  pattern:
+    console: "%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n"
