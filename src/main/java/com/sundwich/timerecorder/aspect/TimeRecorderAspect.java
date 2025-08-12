@@ -20,7 +20,6 @@ import java.util.Stack;
  */
 
 @Aspect
-@ConditionalOnProperty(prefix = "time-recorder", name = "enable", havingValue = "true")
 public class TimeRecorderAspect {
     private static final Logger logger = LoggerFactory.getLogger(TimeRecorderAspect.class);
     private final TimeRecorderProperties properties;

@@ -3,6 +3,7 @@ package com.sundwich.timerecorder.config;
 import com.sundwich.timerecorder.aspect.TimeRecorderAspect;
 import com.sundwich.timerecorder.properties.TimeRecorderProperties;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -19,6 +20,7 @@ public class TimeRecorderAutoConfiguration {
 
     @Bean
     @ConditionalOnMissingBean
+    @ConditionalOnProperty(prefix = "time-recorder", name = "enabled", havingValue = "true")
     public TimeRecorderAspect timeRecorderAspect(TimeRecorderProperties properties) {
         return new TimeRecorderAspect(properties);
     }
